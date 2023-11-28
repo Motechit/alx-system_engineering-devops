@@ -3,6 +3,18 @@
 
 sudo apt update
 sudo apt install -y nginx
-sudo ufw allow 'Nginx HTTP'
-echo "Hello World!" | tee /var/www/html/index.nginx-debian.html
-sudo service nginx restart
+
+sudo bash -c 'echo "server {
+    listen 80;
+    server_name _;
+
+    location / {
+        return 200 \"Hello World!\";
+    }
+}" > /etc/nginx/sites-available/default'
+
+# Restart Nginx
+sudo /etc/init.d/nginx restart
+
+# Display a message indicating successful configuration
+echo "Nginx has been configured. You can test it by running 'curl http://localhost/'"
