@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-"""This module exports data gotten from 
+"""This module exports data gotten from
 an API in the JSON format"""
-
 
 import json
 import requests
