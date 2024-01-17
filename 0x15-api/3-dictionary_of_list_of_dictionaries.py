@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """This script exports data gotten from 
 an API in the JSON format"""
+
 import json
 import requests
 import sys
