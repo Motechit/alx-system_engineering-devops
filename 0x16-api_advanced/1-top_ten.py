@@ -18,7 +18,7 @@ def top_ten(subreddit):
         print('None')
         return
     response = response.json()
-    list_obj = response['data']['children']
+    list_obj = response['data']['programming']
     for obj in list_obj:
         print(obj['data']['title'])
     return
