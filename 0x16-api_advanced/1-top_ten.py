@@ -7,7 +7,7 @@ import requests
 
 def top_ten(subreddit):
     """Get 10 hot posts"""
-    url = f"https://www.reddit.com/r/{subreddit}/hot.json?limit=10"
+    url = "https://www.reddit.com/r/worldnews/about.json"
     headers = {'user-agent': 'request'}
     response = requests.get(url, headers=headers, allow_redirects=False)
 
