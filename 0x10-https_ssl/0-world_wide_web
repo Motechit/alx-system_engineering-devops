@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # This bash script will accept 2 arguments and give an
 # output the information for its subdomain.
 
